@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currently Listening To</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #121212;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .spotify-card {
+            width: 420px;
+            padding: 22px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #242424, #121212);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .spotify-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .spotify-logo {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #1DB954;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .album-art {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: #333;
+        }
+
+        .song-info {
+            flex: 1;
+        }
+
+        .now-playing {
+            font-size: 11px;
+            color: #b3b3b3;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .song-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .artist {
+            font-size: 15px;
+            color: #b3b3b3;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #535353;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 34%;
+            height: 100%;
+            background: #ffffff;
+        }
+
+        .time {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: #b3b3b3;
+            margin-top: 6px;
+        }
+
+        .spotify-button {
+            display: block;
+            margin-top: 22px;
+            padding: 12px;
+            border-radius: 25px;
+            background: #1DB954;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .spotify-button:hover {
+            transform: scale(1.02);
+            background: #1ed760;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="spotify-card">
+
+        <div class="spotify-header">
+            <div class="spotify-logo">●</div>
+            <span>Spotify</span>
+        </div>
+
+        <div class="content">
+
+            <img
+                class="album-art"
+                src="https://i.scdn.co/image/ab67616d0000b273c4b6c0b6d8b1f1e4e7c1f6f5"
+                alt="Earrings - Malcolm Todd"
+            >
+
+            <div class="song-info">
+
+                <div class="now-playing">
+                    NOW PLAYING
+                </div>
+
+                <div class="song-title">
+                    Earrings
+                </div>
+
+                <div class="artist">
+                    Malcolm Todd
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="time">
+                    <span>0:52</span>
+                    <span>2:31</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a
+            class="spotify-button"
+            href="https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
+            target="_blank"
+        >
+            ▶ Open in Spotify
+        </a>
+
+    </div>
+
+</body>
+</html>
